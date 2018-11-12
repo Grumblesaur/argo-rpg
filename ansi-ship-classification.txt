@@ -1,0 +1,183 @@
+ANSI Vessel Classification System
+
+The ANSI vessel classification system designates each class of ship with an alphanumeric string
+consisting of separate blocks to indicate the performance, size, and capability of the indicated
+vessel. Each vessel legally registered by a corporation of the United States of America is
+required to broadcast its classification string from its transponder, as it was indicated by
+manufacturer specifications at time of purchase. If the ship has been modified since its
+classification string was created, the vessel must undergo inspection and be reclassified by a
+licensed authority.
+
+Most important are the range, sector, and crew complement specifications. In addition to being
+broadcast via transponder in the vicinity of spaceports, stations, and colonies, these portions
+must be recorded on all documentation pertaining to the ship. All fields must be available in a
+vessel's transponder data packets, though not all documentation will require them. Various port
+authorities will use these designations at their own discretion.
+
+
+The format for a ship's type is long-form:
+<Range><Sector> <Crew Complement>:<Cargo Capacity>:<Passenger Capacity> <Armament>
+
+Short-form:
+<Range><Sector>-<Crew Complement><Cargo Capacity><Passenger Capacity>-<Armament>
+
+The FHS Foresight, for example, can use either of the following designations.
+SC llc:mlf:ntp hpt:deb:exg:kco:kma:cme
+SC-3DP-BEGJKM
+
+A hefty intersystem munitions freighter owned by a military force  might have designations
+like these:
+IM hhc:hfrx:ntp hpt:exg:deb:cme
+IM-7J1P-BEGM
+
+The Apollo spacecraft could have designations such as these:
+OG ulc:nfr:ntp una tra
+OG-1AP-U-T
+
+Voyager:
+IG umc:nfr:ntp una
+IG-0AP-U
+
+
+Range
+-----
+Daughter     (D) : Designed for launch from and return to a mothership; not equipped to land
+                   in much other than a hangar.
+Fixed        (F) : This designation exists to define space stations.
+Interstellar (I) : Designed to travel between solar systems.
+Orbital      (O) : Designed to remain within orbit around the celestial body it was launched from
+                   or near.
+Solar        (S) : Designed to remain within a solar system.
+
+
+Sector
+------
+Commercial   (C) : Built or converted specifically for the needs of industry or commercial
+                   transport.
+General      (G) : Built for general space traffic, including private citizens, academic research,
+                   non-profit organizations, and other miscellaneous uses.
+Military     (M) : Built or converted specifically for the needs of military or paramilitary
+                   organizations.
+Retired      (R) : Taken out of service for use as a museum ship or when parked or placed into
+                   orbit while awaiting scrapping or dismantling.
+
+
+Crew Complement
+---------------
+Recommended number of people to maintain all of the vessel's necessary functions and designated
+role, not to include passenger capacity.
+
+Unmanned       (umc) [0]: 0
+Ultralight     (ulc) [1]: 1-5
+Superlight     (slc) [2]: 6-10
+Light          (llc) [3]: 11-50
+Quasilight     (qlc) [4]: 51-100
+Medium         (mmc) [5]: 101-500
+Quasiheavy     (qhc) [6]: 501-1,000
+Heavy          (hhc) [7]: 1,001-5,000
+Superheavy     (shc) [8]: 5,001-10,000
+Ultraheavy     (uhc) [9]: 10,001-50,000
+Absurdly heavy (ahc) [ ]: >50,000
+
+No shortcode has been supplied for ahc-type ships, since they'd be so massive that sending a
+short-form code would undermine their majesty, as decided by committee.
+
+
+Cargo Capacity
+--------------
+Total volume of the vessel's primary cargo bays, not to include living space or storage for
+crew or passenger luggage. 1 Murph (mrf) = 10 cubic meters.
+
+Nonfreighter         (nfr) [A]: <1 mrf
+Microlifter          (μlf) [B]: 1-5 mrf
+Light lifter         (llf) [C]: 6-10 mrf
+Medium lifter        (mlf) [D]: 11-50 mrf
+Heavy lifter         (hlf) [E]: 51-100 mrf
+Superlifter          (slf) [F]: 101-500 mrf
+Microfreighter       (μfr) [G]: 501-1,000 mrf
+Light freighter      (lfr) [H]: 1,001-5,000 mrf
+Medium freighter     (mfr) [I]: 5,001-10,000 mrf
+Heavy freighter      (hfr) [J]: 10,001-50,000 mrf
+Superfreighter       (sfr) [K]: 50,001-100,000 mrf
+Light barge          (lbg) [L]: 100,001-500,000 mrf
+Medium barge         (mbg) [M]: 500,001-1,000,000 mrf
+Heavy barge          (hbg) [N]: 1,000,001-5,000,000 mrf
+Very heavy barge     (vbg) [O]: 5,000,001-10,000,000 mrf
+Absurdly heavy barge (abg) [ ]: >10,000,000 mrf
+
+No shortcode has been supplied for abg-type ships, since they'd be so massive that sending a
+short-form code would undermine their majesty, as decided by committee.
+
+
+These designations may have additional characters appended, for when a ship is designed for special
+payloads, and the lack of indication of such a design while carrying a restricted variety of cargo
+would result in a violation of commerce laws:
+
+Hazardous materials          (z) [0]
+Munitions, explosives        (x) [1]
+Climate controlled cargo bay (c) [2]
+Medical supplies             (b) [3]
+Wildlife                     (w) [4]
+
+
+Passenger Capacity
+------------------
+Total lodging and accomodation capacity for passengers on board, not to include crew
+complement or crew accomodations.
+
+Nontransport   (ntp) [P]: 0
+Microshuttle   (μsh) [Q]: 1-5
+Light shuttle  (lsh) [R]: 6-10
+Medium shuttle (msh) [S]: 11-50
+Heavy shuttle  (hsh) [T]: 51-100
+Light ferry    (lfy) [U]: 101-500
+Medium ferry   (mfy) [V]: 501-1,000
+Heavy ferry    (hfy) [W]: 1,001-5,000
+Light liner    (llr) [X]: 5,001-10,000
+Medium liner   (mlr) [Y]: 10,001-50,000
+Heavy liner    (hlr) [Z]: >50,000
+
+
+Armament
+--------
+Indication of the total number of weapons the vessel is armed with as well as the capabilities
+afforded by the ship's loadout. If the ship's armament deviates from standard, this must be
+reflected by transponder flags.
+
+Weapon hardpoint count classification:
+
+Unarmed         (una) [U]: 0
+Light peacetime (lpt) [A]: 1-10
+Heavy peacetime (hpt) [B]: 11-25
+Light wartime   (lwt) [C]: 26-50
+Heavy wartime   (hwt) [D]: >50
+
+Weapon type classification:
+
+directed energy, beam  (deb) [E]: long-burst energy weapons, for point defense or precise aim
+directed energy, pulse (dep) [F]: short-burst energy weapons, usually meant for interference
+explosive, guided      (exg) [G]: propelled explosives with onboard guidance systems
+explosive, ballistic   (exg) [H]: propelled explosives without onboard guidance systems
+explosive, unpropelled (exu) [I]: unpropelled explosives (bombs, mines, or similar)
+kinetic, computerized  (kco) [J]: mass driver or artillery weapons assisted by the computer
+kinetic, manual        (kma) [K]: mass driver or artillery weapons aimed solely by the operator
+
+countermeasures, drone      (cmd) [L]: releases disposable drones to neutralize incoming threat
+countermeasures, electronic (cme) [M]: emits signals from vessel to neutralize incoming threat
+countermeasures, physical   (cmp) [N]: emits physical matter to neutralize incoming threat
+
+
+Miscellaneous
+-------------
+General odds-and-ends worth noting about a ship, optionally appended after the Armament segment
+and a hyphen.
+
+Transatmospheric   (tra) [T]: Can land on and launch from Earth's surface by its own propulsion
+                              systems alone.
+Artificial Gravity (arg) [G]: Generates its own artificial gravity. Generally not noted unless the
+                              model of ship in question has a variant without artificial gravity.
+
+
+
+
+
