@@ -29,7 +29,10 @@ low-temperature environment of Enceladus' surface or its orbit. The
 organism's structure is small and strong enough to prevent it from bursting
 due to a pressure differential, and the temperature drop slows its
 metabolism near to a standstill. Trillions of these microbes lie dormant on
-Enceladus' surface and in the skies in Saturn's E-ring.
+Enceladus' surface and in the skies in Saturn's E-ring. When outside of the
+shadow of Saturn, the microbes will metabolize the ejecta they cling to with a
+rudimentary form of photosynthesis, thus being the only life forms known to
+survive unprotected in the vacuum of space.
 
 The team won a biological discovery award from the Gas Giant Colonization
 Fund, with Kate receiving recognition as a GGCF Distinguished Young
