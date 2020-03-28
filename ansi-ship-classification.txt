@@ -157,7 +157,7 @@ Weapon type classification:
 directed energy, beam  (deb) [E]: long-burst energy weapons, for point defense or precise aim
 directed energy, pulse (dep) [F]: short-burst energy weapons, usually meant for interference
 explosive, guided      (exg) [G]: propelled explosives with onboard guidance systems
-explosive, ballistic   (exg) [H]: propelled explosives without onboard guidance systems
+explosive, ballistic   (exb) [H]: propelled explosives without onboard guidance systems
 explosive, unpropelled (exu) [I]: unpropelled explosives (bombs, mines, or similar)
 kinetic, computerized  (kco) [J]: mass driver or artillery weapons assisted by the computer
 kinetic, manual        (kma) [K]: mass driver or artillery weapons aimed solely by the operator
